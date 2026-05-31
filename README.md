@@ -8,7 +8,7 @@ It is the companion to ConsentMirror369. If ConsentMirror369 is the shield that 
 
 ## Current status
 
-v0.2 prototype.
+v0.3 prototype.
 
 ## Core vow
 
@@ -37,11 +37,14 @@ Use language to strengthen agency, never to override it.
 - Possibility pattern taxonomy
 - Searchable sentence browser
 - Selected sentence detail view
+- Real-world scenario examples
+- Scenario category filters
+- Guided sentence builder
 - Local-only practice log
 - Practice log JSON export/import
 - Duplicate-aware import handling
 - Printable sheathed-sword card deck
-- Ethics, safety, privacy, and card deck docs
+- Ethics, safety, privacy, scenarios, builder, and card deck docs
 - GitHub Pages deployment workflow
 - Verification workflow
 
@@ -102,6 +105,8 @@ If there is immediate danger, threats, stalking, coercive control, self-harm ris
 - `docs/SAFETY_AND_CLAIM_BOUNDARIES.md`
 - `docs/PRIVACY_MODEL.md`
 - `docs/CARD_DECK_SPEC.md`
+- `docs/SCENARIO_EXAMPLES.md`
+- `docs/GUIDED_SENTENCE_BUILDER.md`
 
 ## License
 
