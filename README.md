@@ -1,5 +1,7 @@
 # LumenSword369
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20480310.svg)](https://doi.org/10.5281/zenodo.20480310)
+
 **LumenSword369 is a humane empowering-speech and possibility-language project.**
 
 It is the companion to ConsentMirror369. If ConsentMirror369 is the shield that helps people recognize pressure, LumenSword369 is the sheathed sword: disciplined clarity that strengthens dignity, consent, courage, and possibility without overpowering anyone.
@@ -10,7 +12,19 @@ It is the companion to ConsentMirror369. If ConsentMirror369 is the shield that 
 
 **Latest release:** [LumenSword369 v1.0.0 — The Sword Cuts Fog, Not People](https://github.com/MichaelWave369/lumen_sword_369/releases/tag/v1.0.0)
 
-**Status:** v1.0.0 released.
+**DOI:** [10.5281/zenodo.20480310](https://doi.org/10.5281/zenodo.20480310)
+
+**Status:** v1.0.0 archived on Zenodo.
+
+## Citation
+
+If you use or reference this project, please cite:
+
+```text
+Hughes, Michael W. (2026). LumenSword369 (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.20480310
+```
+
+Citation metadata is also available in `CITATION.cff`.
 
 ## Core vow
 
@@ -52,6 +66,7 @@ Use language to strengthen agency, never to override it.
 - Security and safety policy
 - GitHub Pages deployment workflow
 - Verification workflow
+- Zenodo DOI badge and citation metadata
 
 ## Core method
 
