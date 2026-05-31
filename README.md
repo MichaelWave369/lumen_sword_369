@@ -8,7 +8,7 @@ It is the companion to ConsentMirror369. If ConsentMirror369 is the shield that 
 
 ## Current status
 
-v0.3 prototype.
+v1.0.0-rc.1 release candidate prep.
 
 ## Core vow
 
@@ -45,6 +45,9 @@ Use language to strengthen agency, never to override it.
 - Duplicate-aware import handling
 - Printable sheathed-sword card deck
 - Ethics, safety, privacy, scenarios, builder, and card deck docs
+- Accessibility notes and v1.0 release checklist
+- Release notes and public launch post draft
+- Security and safety policy
 - GitHub Pages deployment workflow
 - Verification workflow
 
@@ -84,6 +87,16 @@ npm run validate:data
 npm run build
 ```
 
+## Release docs
+
+Before public launch, use:
+
+- `docs/RELEASE_PROCESS.md`
+- `docs/V1_RELEASE_CHECKLIST.md`
+- `docs/V1_RELEASE_NOTES.md`
+- `docs/PUBLIC_LAUNCH_POST.md`
+- `docs/ACCESSIBILITY_NOTES.md`
+
 ## Privacy model
 
 The practice log is local-first. Entries are saved only in the user's browser through local storage. The app includes export, import, duplicate-skip, and clear controls so the user can keep, restore, or remove their own practice entries.
@@ -98,6 +111,10 @@ Empowering language must not become disguised pressure.
 
 If there is immediate danger, threats, stalking, coercive control, self-harm risk, or fear for physical safety, prioritize trusted support, local emergency services, or qualified professional help.
 
+## Security and safety policy
+
+See `SECURITY.md` for security reporting, safety concerns, and privacy reminders.
+
 ## Docs
 
 - `docs/ETHICAL_CHARTER.md`
@@ -107,6 +124,11 @@ If there is immediate danger, threats, stalking, coercive control, self-harm ris
 - `docs/CARD_DECK_SPEC.md`
 - `docs/SCENARIO_EXAMPLES.md`
 - `docs/GUIDED_SENTENCE_BUILDER.md`
+- `docs/ACCESSIBILITY_NOTES.md`
+- `docs/V1_RELEASE_CHECKLIST.md`
+- `docs/V1_RELEASE_NOTES.md`
+- `docs/PUBLIC_LAUNCH_POST.md`
+- `docs/RELEASE_PROCESS.md`
 
 ## License
 
