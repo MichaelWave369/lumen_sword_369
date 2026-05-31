@@ -1,0 +1,32 @@
+{
+  "title": "LumenSword369",
+  "upload_type": "software",
+  "description": "LumenSword369 is a humane empowering-speech and possibility-language tool for practicing language that validates, empowers, clarifies, and invites without coercion. It is designed as the sheathed sword companion to ConsentMirror369: disciplined clarity under ethical restraint. The sword cuts fog, not people.",
+  "creators": [
+    {
+      "name": "Hughes, Michael W.",
+      "affiliation": "PHI369 Labs / Parallax"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "empowering speech",
+    "consent",
+    "possibility language",
+    "reflection",
+    "local-first",
+    "communication ethics"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/MichaelWave369/lumen_sword_369",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.20480310",
+      "relation": "isIdenticalTo",
+      "scheme": "doi"
+    }
+  ]
+}
