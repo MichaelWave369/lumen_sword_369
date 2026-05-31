@@ -1,0 +1,86 @@
+[
+  {
+    "id": "family_courage_001",
+    "category": "family",
+    "title": "Family courage without pressure",
+    "situation": "Someone in the family is afraid to say what they really think because they do not want to upset anyone.",
+    "starting_sentence": "You do not have to disappear to keep peace.",
+    "possible_patterns": ["Dignity restoration", "Relational safety"],
+    "reflection_questions": [
+      "What truth needs room without turning the conversation cruel?",
+      "How can care stay present while honesty returns?",
+      "What choice leaves dignity intact?"
+    ],
+    "empowering_response": "You matter here. We can make room for your truth without turning this into a fight."
+  },
+  {
+    "id": "faith_questions_001",
+    "category": "faith",
+    "title": "Faith with honest questions",
+    "situation": "Someone feels ashamed for having sincere questions about faith, meaning, or truth.",
+    "starting_sentence": "You are allowed to need clarity before commitment.",
+    "possible_patterns": ["Discernment blessing", "Truth with mercy"],
+    "reflection_questions": [
+      "Can humility include honest questions?",
+      "What would seeking truth look like without shame?",
+      "How can conscience be honored here?"
+    ],
+    "empowering_response": "Your questions do not make you bad. They may be part of seeking truth with humility."
+  },
+  {
+    "id": "workplace_boundary_001",
+    "category": "workplace",
+    "title": "Workplace boundary with respect",
+    "situation": "A coworker or manager needs a clear answer, but you need time before committing.",
+    "starting_sentence": "You are not wrong for needing time.",
+    "possible_patterns": ["Pace restoration", "Boundary blessing"],
+    "reflection_questions": [
+      "What information is needed before agreement?",
+      "What boundary keeps this sustainable?",
+      "How can respect remain present while I pause?"
+    ],
+    "empowering_response": "I want to give you a clear answer, and I need time to review this before I commit."
+  },
+  {
+    "id": "grief_presence_001",
+    "category": "grief",
+    "title": "Presence during grief",
+    "situation": "Someone is hurting, and advice would feel too fast or too small.",
+    "starting_sentence": "What you feel makes sense from where you are standing.",
+    "possible_patterns": ["Experience validation", "Relational safety"],
+    "reflection_questions": [
+      "What needs to be witnessed rather than fixed?",
+      "What would comfort sound like without rushing healing?",
+      "How can I stay present with gentleness?"
+    ],
+    "empowering_response": "I am here with you. I do not need to fix this moment to honor what you are feeling."
+  },
+  {
+    "id": "conflict_repair_001",
+    "category": "conflict",
+    "title": "Truth without cruelty",
+    "situation": "Two people disagree, and the conversation could become harsh or defensive.",
+    "starting_sentence": "We can tell the truth without making it cruel.",
+    "possible_patterns": ["Truth with mercy", "Relational safety"],
+    "reflection_questions": [
+      "What truth needs to be spoken?",
+      "What tone protects dignity?",
+      "What repair is possible after honesty?"
+    ],
+    "empowering_response": "I want to be honest and still kind. Let us slow down enough to keep dignity in the room."
+  },
+  {
+    "id": "apology_repair_001",
+    "category": "apology",
+    "title": "Apology with dignity",
+    "situation": "Someone wants to take responsibility without collapsing into shame or demanding instant forgiveness.",
+    "starting_sentence": "What would become possible if shame was not in charge?",
+    "possible_patterns": ["Shame dissolving", "Truth with mercy"],
+    "reflection_questions": [
+      "What responsibility can be named clearly?",
+      "What repair can be offered without pressure?",
+      "How can accountability stay grounded?"
+    ],
+    "empowering_response": "I can take responsibility without making this about my shame. I want to repair what I can and respect your pace."
+  }
+]
