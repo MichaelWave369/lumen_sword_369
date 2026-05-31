@@ -1,0 +1,11 @@
+[
+  {"id":"dignity_restoration","name":"Dignity restoration","description":"Helps someone feel human, visible, and intact again."},
+  {"id":"consent_strengthening","name":"Consent strengthening","description":"Makes free choice explicit and protects agency."},
+  {"id":"fear_separation","name":"Fear separation","description":"Names fear without letting it run the conversation."},
+  {"id":"shame_dissolving","name":"Shame dissolving","description":"Moves toxic self-attack out of the center."},
+  {"id":"truth_with_mercy","name":"Truth with mercy","description":"Allows honesty without cruelty."},
+  {"id":"boundary_blessing","name":"Boundary blessing","description":"Frames boundaries as part of healthy care."},
+  {"id":"possibility_opening","name":"Possibility opening","description":"Moves from stuckness toward a next step."},
+  {"id":"relational_safety","name":"Relational safety","description":"Makes disagreement and honesty more survivable."},
+  {"id":"courage_activation","name":"Courage activation","description":"Helps someone act without domination or pressure."}
+]
