@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: LumenSword369
+message: If you use LumenSword369, please cite it using the metadata from this file.
+type: software
+authors:
+  - family-names: Hughes
+    given-names: Michael W.
+    alias: MichaelWave369
+abstract: >-
+  LumenSword369 is a humane empowering-speech and possibility-language tool for practicing language that validates, empowers, clarifies, and invites without coercion.
+version: 1.0.0
+date-released: 2026-05-31
+license: MIT
+doi: 10.5281/zenodo.20480310
+repository-code: https://github.com/MichaelWave369/lumen_sword_369
+url: https://doi.org/10.5281/zenodo.20480310
+keywords:
+  - empowering-speech
+  - consent
+  - possibility-language
+  - local-first
+  - reflection
+  - communication
