@@ -6,9 +6,11 @@ It is the companion to ConsentMirror369. If ConsentMirror369 is the shield that 
 
 > The sword cuts fog, not people.
 
-## Current status
+## Official release
 
-v1.0.0 ready.
+**Latest release:** [LumenSword369 v1.0.0 — The Sword Cuts Fog, Not People](https://github.com/MichaelWave369/lumen_sword_369/releases/tag/v1.0.0)
+
+**Status:** v1.0.0 released.
 
 ## Core vow
 
