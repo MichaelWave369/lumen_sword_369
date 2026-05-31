@@ -1,6 +1,8 @@
 import { useMemo, useRef, useState } from 'react'
 import swordSentences from '../data/sword_sentences.json'
 import possibilityPatterns from '../data/possibility_patterns.json'
+import scenarios from '../data/scenarios.json'
+import builderTemplates from '../data/builder_templates.json'
 import { printSwordDeck } from './printDeck.js'
 
 const STORAGE_KEY = 'lumensword369.practice.v1'
@@ -95,17 +97,27 @@ function mergeWithoutDuplicates(incoming, existing) {
 export default function App() {
   const importInputRef = useRef(null)
   const [selectedId, setSelectedId] = useState(swordSentences[0].id)
+  const [scenarioId, setScenarioId] = useState(scenarios[0].id)
+  const [templateId, setTemplateId] = useState(builderTemplates[0].id)
   const [search, setSearch] = useState('')
+  const [scenarioFilter, setScenarioFilter] = useState('all')
   const [reflection, setReflection] = useState('I can speak truth with mercy and leave choice intact.')
   const [practiceLog, setPracticeLog] = useState(loadPracticeLog)
   const [status, setStatus] = useState('')
 
   const selected = swordSentences.find(item => item.id === selectedId) || swordSentences[0]
+  const selectedScenario = scenarios.find(item => item.id === scenarioId) || scenarios[0]
+  const selectedTemplate = builderTemplates.find(item => item.id === templateId) || builderTemplates[0]
   const filtered = useMemo(() => {
     const q = search.toLowerCase().trim()
     if (!q) return swordSentences
     return swordSentences.filter(item => [item.sentence, item.pattern, item.purpose, item.prompt].join(' ').toLowerCase().includes(q))
   }, [search])
+  const scenarioCategories = useMemo(() => ['all', ...new Set(scenarios.map(item => item.category))], [])
+  const visibleScenarios = useMemo(() => {
+    if (scenarioFilter === 'all') return scenarios
+    return scenarios.filter(item => item.category === scenarioFilter)
+  }, [scenarioFilter])
 
   function savePractice() {
     const entry = {
@@ -160,11 +172,24 @@ export default function App() {
     reader.readAsText(file)
   }
 
+  function loadScenario(item) {
+    setScenarioId(item.id)
+    setReflection(item.empowering_response)
+    const match = swordSentences.find(sentence => sentence.sentence === item.starting_sentence)
+    if (match) setSelectedId(match.id)
+    setStatus(`Loaded scenario: ${item.title}`)
+  }
+
+  function useTemplate() {
+    setReflection(selectedTemplate.template)
+    setStatus(`Loaded builder template: ${selectedTemplate.label}`)
+  }
+
   return (
     <main style={{ minHeight: '100vh', padding: 24, background: `radial-gradient(circle at top left, #ffe8ad, transparent 360px), radial-gradient(circle at bottom right, #d8e2ff, transparent 420px), ${colors.cream}`, color: colors.ink }}>
       <div style={{ maxWidth: 1120, margin: '0 auto' }}>
         <section style={{ ...card, background: 'rgba(255,249,237,.94)' }}>
-          <Eyebrow>LumenSword369 v0.2 · Sheathed sword</Eyebrow>
+          <Eyebrow>LumenSword369 v0.3 · Sheathed sword</Eyebrow>
           <h1 style={{ fontSize: 'clamp(42px, 7vw, 78px)', lineHeight: .95, letterSpacing: '-0.06em', margin: 0 }}>Empowering speech for clearer possibility.</h1>
           <p style={{ fontSize: 18, lineHeight: 1.6, maxWidth: 820, color: colors.softInk }}>
             A humane companion to ConsentMirror369. Where the mirror protects choice, the sword speaks disciplined truth with mercy: it cuts fog, not people.
@@ -173,6 +198,58 @@ export default function App() {
             {['Validate', 'Empower', 'Clarify', 'Invite'].map(step => (
               <span key={step} style={{ padding: '8px 12px', borderRadius: 999, border: `1px solid ${colors.border}`, background: colors.white, color: colors.blue, fontWeight: 800 }}>{step}</span>
             ))}
+          </div>
+        </section>
+
+        <section style={{ ...card, marginTop: 18 }}>
+          <Eyebrow>Practice scenarios</Eyebrow>
+          <h2>Learn through real-life contexts</h2>
+          <p style={{ color: colors.softInk }}>Load family, faith, workplace, grief, conflict, or apology scenarios into the sentence practice flow.</p>
+          <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginBottom: 14 }}>
+            {scenarioCategories.map(category => (
+              <button key={category} onClick={() => setScenarioFilter(category)} style={category === scenarioFilter ? buttonPrimary : buttonSoft} aria-pressed={category === scenarioFilter}>{category}</button>
+            ))}
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 12 }}>
+            {visibleScenarios.map(item => (
+              <article key={item.id} style={{ padding: 16, borderRadius: 18, background: colors.paper, border: `1px solid ${colors.border}` }}>
+                <strong>{item.title}</strong>
+                <p style={{ color: colors.softInk }}>{item.situation}</p>
+                <p><em>{item.starting_sentence}</em></p>
+                <button onClick={() => loadScenario(item)} style={buttonSoft}>Load scenario</button>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 18, marginTop: 18 }}>
+          <div style={card}>
+            <Eyebrow>Scenario mirror</Eyebrow>
+            <h2>{selectedScenario.title}</h2>
+            <p style={{ color: colors.softInk }}>{selectedScenario.situation}</p>
+            <p><strong>Starting sentence:</strong> {selectedScenario.starting_sentence}</p>
+            <p><strong>Possible patterns:</strong> {selectedScenario.possible_patterns.join(', ')}</p>
+            <h3>Reflection questions</h3>
+            <ul style={{ lineHeight: 1.8, paddingLeft: 20 }}>
+              {selectedScenario.reflection_questions.map(question => <li key={question}>{question}</li>)}
+            </ul>
+            <p><strong>Empowering response:</strong> {selectedScenario.empowering_response}</p>
+          </div>
+
+          <div style={card}>
+            <Eyebrow>Guided sentence builder</Eyebrow>
+            <h2>Build empowering language</h2>
+            <label style={{ display: 'grid', gap: 8 }}>
+              Builder tone
+              <select value={templateId} onChange={event => setTemplateId(event.target.value)} style={{ width: '100%', padding: 12, borderRadius: 12, border: `1px solid ${colors.border}` }}>
+                {builderTemplates.map(template => <option key={template.id} value={template.id}>{template.label}</option>)}
+              </select>
+            </label>
+            <div style={{ padding: 14, borderRadius: 16, background: colors.paper, border: `1px solid ${colors.border}`, marginTop: 12 }}>
+              <strong>{selectedTemplate.tone}</strong>
+              <p>{selectedTemplate.template}</p>
+            </div>
+            <button onClick={useTemplate} style={{ ...buttonPrimary, marginTop: 12 }}>Use this sentence</button>
           </div>
         </section>
 
