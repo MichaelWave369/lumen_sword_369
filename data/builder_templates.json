@@ -1,0 +1,38 @@
+[
+  {
+    "id": "validate_experience",
+    "tone": "validate",
+    "label": "Validate experience",
+    "template": "What you are feeling matters, and I want to understand it without rushing you."
+  },
+  {
+    "id": "restore_choice",
+    "tone": "empower",
+    "label": "Restore choice",
+    "template": "You are allowed to choose at a pace that keeps you honest and whole."
+  },
+  {
+    "id": "clarify_fog",
+    "tone": "clarify",
+    "label": "Clarify the fog",
+    "template": "Let us separate what happened from what fear or shame is saying about it."
+  },
+  {
+    "id": "invite_next_step",
+    "tone": "invite",
+    "label": "Invite a next step",
+    "template": "What is one next step that feels honest, kind, and sustainable?"
+  },
+  {
+    "id": "truth_mercy",
+    "tone": "truth-with-mercy",
+    "label": "Truth with mercy",
+    "template": "I want us to tell the truth in a way that keeps dignity in the room."
+  },
+  {
+    "id": "boundary_blessing",
+    "tone": "boundary",
+    "label": "Boundary blessing",
+    "template": "A boundary can protect what matters without rejecting love or respect."
+  }
+]
