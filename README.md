@@ -8,7 +8,7 @@ It is the companion to ConsentMirror369. If ConsentMirror369 is the shield that 
 
 ## Current status
 
-v1.0.0-rc.1 release candidate prep.
+v1.0.0 ready.
 
 ## Core vow
 
